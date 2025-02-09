@@ -7,7 +7,39 @@
 	  margin: 30px;
           padding: 20px;}
     h1 {text-align:center;}
-    .toc {font-size:19px;}
+    .toc-container {
+        background: #fff3cd;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    .toc-title {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        color: #d77a00;
+    }
+    .toc {
+        font-size: 19px;
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        padding: 8px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .toc li:last-child {
+        border-bottom: none;
+    }
+    .toc a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    .toc a:hover {
+        color: #d77a00;
     .ao {font-size:17px;}
     .ba {text-decoration:underline;
 	font-size:18px}
@@ -47,15 +79,17 @@
 <body>
 <div class="content">
 <h1><u>TÍN NGƯỠNG THỜ CÁC VỊ ANH HÙNG</u></h1>
-<h2>*MỤC LỤC*</h2>
-<ol type="1">
-    <li class="toc"><a href="#LD">Lí do hình thành</a></li>
-    <li class="toc"><a href="#LS">Lịch sử hình thành</a></li>
-    <li class="toc"><a href="#ĐT">Đối tượng thờ phụng</a>
-    <li class="toc"><a href="#LN">Lễ nghi</a></li>
-    <li class="toc"><a href="#YN">Ý nghĩa</a></li>
-    <li class="toc"><a href="#TT">Thực trạng</a></li>
-</ol>
+<div class="toc-container">
+    <div class="toc-title">*MỤC LỤC*</div>
+    <ol type="1" class="toc">
+        <li>1. <a href="#LD">Lí do hình thành</a></li>
+        <li>2. <a href="#LS">Lịch sử hình thành</a></li>
+        <li>3. <a href="#ĐT">Đối tượng thờ phụng</a></li>
+        <li>4. <a href="#LN">Lễ nghi</a></li>
+        <li>5. <a href="#YN">Ý nghĩa</a></li>
+        <li>6. <a href="#TT">Thực trạng</a></li>
+    </ol>
+</div>
 <h2 id="LD" class="ba">1. Lí do hình thành</h2>
 <p class="ao">Mọi người chọn thờ các vị anh hùng để tri ân công lao, gìn giữ truyền thống dân tộc, giáo dục lòng yêu nước và cầu mong sự phù hộ.</p>
 <p class="ao">Đây cũng là cách gắn kết cộng đồng và tôn vinh những người đã hy sinh vì đất nước.</p>
