@@ -5,15 +5,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <style>
     body {background-color:#f5f5dc;
-	  margin: 30px;
+	      margin: 30px;
           padding: 20px;}
-     h1 {text-align:center;
-        font-size:40px;
-        font-family: 'Dancing Script', cursive;
-        color: #ffd700;
-        background-color: #333;
-        padding: 10px;
-        border-radius: 10px;}
+     h1 {position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         text-align:center;
+         font-size:45px;
+         font-family: 'Dancing Script', cursive;
+         color: #ffd700;
+         background-color: #333;
+         padding: 5px 0;
+         margin: 0;
+         border-radius: 0;}
     .toc-container {
         background: #fff3cd;
         padding: 15px;
@@ -22,6 +27,7 @@
         margin-bottom: 20px;
     }
     .toc-title {
+        font-family: 'Dancing Script', cursive;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
@@ -78,7 +84,7 @@
             background-color: #555;
         }
 	.KB{font-size:2px; text-align:right}
-	.content {
+	.content {margin-top: 70px; /* Điều chỉnh cho phù hợp với chiều cao của tiêu đề */
             background: white;
             padding: 20px;
             border-radius: 10px;
@@ -163,3 +169,4 @@
 </div>
 </body>
 </html>
+
